@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+   <script src="main.js"> </script>
+   <script src="Appointments.js"> </script>
+  </head>
+  <body>
+    <div class="Head">
+        <img src="CMU_Logo_Carnegie_Mellon-University.png" id="logo" height="80px;">
+        Health Connect
+        <input type="text" class="search" placeholder="Search">
+      </div>
+    <div class="black-line"></div>
+    <div class="Head2">
+      <div class="username"> <b>Andrew Julian Wang</b> </div>
+      <div class="short-line"></div>
+      <div class="emptyGap"></div>
+         <li><b><a href="#">Logout</a></b></li>
+         <li><b><a href="#">Feedback</a></b></li>
+         <li><b><a href="#">FAQ</a></b></li>
+      </div>
+  
+<div class="context"> 
+   <div class="title"><b> Schedule your Appointment: </b></div>
+      <form id="change">
+        <div>
+          <label for="location"><b>Location:</b></label>
+          <select id="location" name="location" onchange="getTimeslot()">
+            <option value="East Campus Garage"> East Campus Garage </option>
+            <option value="TCS Hall"> TCS Hall </option>
+          </select>
+        </div>
+        <div>
+          <label for="reason"><b>Reason:</b></label>
+          <select id="reason" name="reason" onchange="getTimeslot()">
+            <option value="Covid Testing"> Covid Testing </option>
+            <option value="Vaccination"> Vaccination </option>
+          </select>
+        </div>
+        <div>
+        <label for="date"><b>Date:</b></label>
+        <input type="date" id="date" name="date" onchange="getTimeslot()">
+        </div>
+      </form>
+
+      <div class="con">
+      <div class="Smaller_Title"> <b> Time Slots: </b> </div> 
+      <div id="availableTimeslot">
+      </div>
+
+      <div id="Schedule_modal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <div id="Confirmation"> <b> Please Confirm your Selected Appointment: </b> </div>
+          <div class = "thing" id="modal-date"></div>
+          <div class = "thing" id="modal-reason"></div>
+          <div class = "thing" id="modal-location"></div>
+          <div class = "thing" id="modal-timeslot"></div>
+          <div id="modal-buttons"></div>
+        </div>
+      </div>
+  </div>
+        
+    
+
+  </div>
+  
+      <div class="sticky-sidebar">
+        <div class="scotty">
+          <img src='https://i.postimg.cc/VkFS4qdw/dog.png' border='0' alt='dog' class="scotty"/>
+        </div>
+        <div class="whiteline"></div>
+        <div class="sep"></div>
+        <div class="bar"><b><a href="home.html">Home</a></b></div>
+        <div class="bar"><b><a href="#">Profile</a></b></div>
+        <div class="bar"><b><a href="appointment.html">Appointment <sup id="counter"></sup> </a></b></div>
+        <div class="bar"><b><a href="testing.html">Testing Results</a></b></div>
+        <div class="bar"><b><a href="immune.html">Immunizations</a></b>
+      </div>
+      </div>
+  </body>
+
+</html>
+
+ 
