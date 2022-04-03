@@ -1,2 +1,1 @@
-# ajw2_pui_hw5_spring_2022
-Please start from Index thank you it is the login page.
+Please start from the Index, Click login, then schedule for appointment, then check "view your appointment" to see a list of appointments scheduled.
