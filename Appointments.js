@@ -8,6 +8,7 @@ function date (numberAdded) {
     {
       returnValue ="0"+ (date.getDate());
     }
+    else returnValue = date.getDate();
     return returnValue;
 }
 
